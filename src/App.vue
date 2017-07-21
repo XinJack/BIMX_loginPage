@@ -3,7 +3,6 @@
     <el-row>
       <el-col>
         <el-form label-position="right" label-width="80px" :model="loginForm" :rules="rules" ref="loginForm">
-          {% csrf_token %}
           <el-form-item label="用户名" prop="username">
             <el-input v-model="loginForm.username"></el-input>
           </el-form-item>
